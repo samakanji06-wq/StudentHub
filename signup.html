@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>StudentHub — Sign Up</title>
+</head>
+
+<body>
+    <main>
+        <div class="auth-card">
+            <div class="auth-blob"></div>
+            <span class="auth-tag">For Nigerian Students</span>
+            <h2 class="auth-title">Create Your Account</h2>
+            <p class="auth-subtitle">Sign up to start finding SIWES & internship opportunities</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="fullname" class="control-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullname" placeholder="Full Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="control-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="control-label">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <button type="button" class="toggle-password" id="toggleBtn1">
+                            <svg class="eye-icon" data-target="password" xmlns="http://www.w3.org/2000/svg" width="18"
+                                height="18" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password" class="control-label">Confirm Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" class="form-control" id="confirm-password"
+                            placeholder="Confirm Password">
+                        <button type="button" class="toggle-password" id="toggleBtn2">
+                            <svg class="eye-icon" data-target="confirm-password" xmlns="http://www.w3.org/2000/svg"
+                                width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group checkbox">
+                    <label><input type="checkbox"> I agree to the <a href="termsofservice.html">Terms of Service</a> and
+                        <a href="privacy.html">Privacy
+                            Policy</a></label>
+                </div>
+
+                <button type="submit" class="btn-signin">Sign Up</button>
+            </form>
+
+            <p class="auth-switch">Already have an account? <a href="login.html">Login</a></p>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

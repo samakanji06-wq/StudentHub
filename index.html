@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>StudentHub</title>
+</head>
+
+<body>
+    <nav>
+        <h3>StudentHub</h3>
+        <div class="navi">
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#findopportunities">Find Opportunities</a>
+                <a href="#saved">Saved</a>
+                <a href="postopportunities.html">Post Opportunities</a>
+                <a href="#about">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="nav-two">
+                <a href="login.html" class="login">Login</a>
+                <a href="signup.html" class="signup">SignUp</a>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <section class="hero">
+        <div id="home">
+            <div>
+                <h5>For Nigerian Students</h5>
+                <p>
+                <h1>Real Opportunities.</h1>
+                <h1>Brighter <span class="fut">Future</span></h1>
+                </p>
+                <span>One place to discover opportunities based on your course, location and opportunity type.</span>
+
+                <div class="search-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-search preview-icon">
+                        <path d="m21 21-4.34-4.34" />
+                        <circle cx="11" cy="11" r="8" />
+                    </svg>
+                    <input class="search-input" type="text" placeholder="Search for opportunities using keywords....">
+                    <button class="search-button">Search</button>
+                </div>
+            </div>
+        </div>
+        <img src="picture.jpg" alt="student" class="pop-image">
+    </section>
+    <section id="findopportunities">
+        <div class="filter-section">
+            <div class="find">
+                <h2>Find Opportunities</h2>
+                <div>Search and filter available student placements</div>
+            </div>
+            <div>
+                <div class="location">
+                    <label>All locations</label>
+                    <select name="state" id="state">
+                        <option>Select a state</option>
+                        <option value="Abia">Abia</option>
+                        <option value="Adamawa">Adamawa</option>
+                        <option value="Akwa Ibom">Akwa Ibom</option>
+                        <option value="Anambra">Anambra</option>
+                        <option value="Bauchi">Bauchi</option>
+                        <option value="Bayelsa">Bayelsa</option>
+                        <option value="Benue">Benue</option>
+                        <option value="Borno">Borno</option>
+                        <option value="Cross River">Cross River</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Ebonyi">Ebonyi</option>
+                        <option value="Edo">Edo</option>
+                        <option value="Ekiti">Ekiti</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="Gombe">Gombe</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jigawa">Jigawa</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Kano">Kano</option>
+                        <option value="Katsina">Katsina</option>
+                        <option value="Kebbi">Kebbi</option>
+                        <option value="Kogi">Kogi</option>
+                        <option value="Kwara">Kwara</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Nasarawa">Nasarawa</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Ogun">Ogun</option>
+                        <option value="Ondo">Ondo</option>
+                        <option value="Osun">Osun</option>
+                        <option value="Oyo">Oyo</option>
+                        <option value="Plateau">Plateau</option>
+                        <option value="Rivers">Rivers</option>
+                        <option value="Sokoto">Sokoto</option>
+                        <option value="Taraba">Taraba</option>
+                        <option value="Yobe">Yobe</option>
+                        <option value="Zamfara">Zamfara</option>
+                        <option value="FCT">Federal Capital Territory (Abuja)</option>
+                    </select>
+                </div>
+                <div class="type">
+                    <label>All types </label>
+                    <select name="course" id="course">
+                        <option>Any field of study</option>
+
+                        <optgroup label="Sciences">
+                            <option value="Biochemistry">Biochemistry</option>
+                            <option value="Microbiology">Microbiology</option>
+                            <option value="Physics">Physics</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Statistics">Statistics</option>
+                            <option value="Geology">Geology</option>
+                            <option value="Zoology">Zoology</option>
+                            <option value="Botany">Botany</option>
+                            <option value="Science Laboratory Technology">Science Laboratory Technology</option>
+                        </optgroup>
+
+                        <optgroup label="Engineering & Technology">
+                            <option value="Computer Engineering">Computer Engineering</option>
+                            <option value="Electrical/Electronic Engineering">Electrical/Electronic Engineering</option>
+                            <option value="Mechanical Engineering">Mechanical Engineering</option>
+                            <option value="Civil Engineering">Civil Engineering</option>
+                            <option value="Chemical Engineering">Chemical Engineering</option>
+                            <option value="Petroleum Engineering">Petroleum Engineering</option>
+                            <option value="Agricultural Engineering">Agricultural Engineering</option>
+                            <option value="Industrial/Production Engineering">Industrial/Production Engineering</option>
+                            <option value="Mechatronics Engineering">Mechatronics Engineering</option>
+                        </optgroup>
+                        <optgroup label="Computing and Information Technology">
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Cyber Security">Cyber Security</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Information System">Information System</option>
+                            <option value="Software Engineering">Software Engineering</option>
+                        </optgroup>
+
+                        <optgroup label="Management & Social Sciences">
+                            <option value="Accounting">Accounting</option>
+                            <option value="Business Administration">Business Administration</option>
+                            <option value="Economics">Economics</option>
+                            <option value="Banking and Finance">Banking and Finance</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Political Science">Political Science</option>
+                            <option value="Sociology">Sociology</option>
+                            <option value="Public Administration">Public Administration</option>
+                            <option value="Mass Communication">Mass Communication</option>
+                            <option value="International Relations">International Relations</option>
+                        </optgroup>
+
+                        <optgroup label="Health & Medical Sciences">
+                            <option value="Medicine and Surgery">Medicine and Surgery</option>
+                            <option value="Nursing Science">Nursing Science</option>
+                            <option value="Pharmacy">Pharmacy</option>
+                            <option value="Physiotherapy">Physiotherapy</option>
+                            <option value="Public Health">Public Health</option>
+                            <option value="Medical Laboratory Science">Medical Laboratory Science</option>
+                            <option value="Dentistry">Dentistry</option>
+                            <option value="Radiography">Radiography</option>
+                        </optgroup>
+
+                        <optgroup label="Law & Education">
+                            <option value="Law">Law</option>
+                            <option value="Education">Education</option>
+                            <option value="Guidance and Counselling">Guidance and Counselling</option>
+                        </optgroup>
+
+                        <optgroup label="Agriculture & Environmental Sciences">
+                            <option value="Agricultural Science">Agricultural Science</option>
+                            <option value="Animal Science">Animal Science</option>
+                            <option value="Crop Science">Crop Science</option>
+                            <option value="Architecture">Architecture</option>
+                            <option value="Urban and Regional Planning">Urban and Regional Planning</option>
+                            <option value="Estate Management">Estate Management</option>
+                            <option value="Environmental Management">Environmental Management</option>
+                            <option value="Surveying and Geoinformatics">Surveying and Geoinformatics</option>
+                        </optgroup>
+
+                        <optgroup label="Arts & Humanities">
+                            <option value="English Language">English Language</option>
+                            <option value="History">History</option>
+                            <option value="Theatre Arts">Theatre Arts</option>
+                            <option value="Linguistics">Linguistics</option>
+                            <option value="Religious Studies">Religious Studies</option>
+                            <option value="Philosophy">Philosophy</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <article class="art">
+                <section class="sqi">
+                    <div class="lag">
+                        <div class="int">Internship</div>
+                        <div class="gig">Lagos</div>
+                    </div>
+                    <div class="web">
+                        <div>Mass Communication Intern</div>
+                        <h4>Fresh FM</h4>
+                        <div>📍 Lagos</div>
+                        <div>🎓 Mass Communication</div>
+                        <div>🗓️ 3 months</div>
+                    </div>
+                    <div class="web-button">
+                        <button id="view">View
+                        </button>
+                        <button class="save">Save
+                        </button>
+                    </div>
+                </section>
+                <section class="sqi">
+                    <div class="lag">
+                        <div class="int">SIWES</div>
+                        <div class="gig">Ibadan</div>
+                    </div>
+                    <div class="web">
+                        <div>SIWES - ICT Support</div>
+                        <h4>Ibadan Digital Hub</h4>
+                        <div>📍 Ibadan</div>
+                        <div>🎓 Computer Science / IT</div>
+                        <div>🗓️ 6 months</div>
+                    </div>
+                    <div class="web-button">
+                        <button id="view">View
+                        </button>
+                        <button class="save">Save
+                        </button>
+                    </div>
+                </section>
+                <section class="sqi">
+                    <div class="lag">
+                        <div class="int">SIWES</div>
+                        <div class="gig">Osogbo</div>
+                    </div>
+                    <div class="web">
+                        <div>Medicine ESI</div>
+                        <h4>University College Hospital</h4>
+                        <div>📍 Osogbo</div>
+                        <div>🎓 Medicine and Surgery</div>
+                        <div>🗓️ 6 months</div>
+                    </div>
+                    <div class="web-button">
+                        <button id="view">View
+                        </button>
+                        <button class="save">Save
+                        </button>
+                    </div>
+                </section>
+
+            </article>
+    </section>
+    <section id="about" class="about-hero">
+        <span class="auth-tag">Our Mission</span>
+        <h1>Connecting Nigerian Students to <span class="fut">Real Opportunities</span></h1>
+        <p>StudentHub exists because finding a SIWES or internship placement shouldn't mean scrolling through endless
+            WhatsApp groups and personal contacts. We bring opportunities together in one organized, searchable place.
+        </p>
+    </section>
+
+    <section class="about-stats">
+        <div class="stat-box">
+            <b>500+</b>
+            <span>Opportunities Listed</span>
+        </div>
+        <div class="stat-box">
+            <b>200+</b>
+            <span>Partner Organizations</span>
+        </div>
+        <div class="stat-box">
+            <b>36</b>
+            <span>States Covered</span>
+        </div>
+    </section>
+
+    <section class="about-content">
+        <div class="about-block">
+            <h3>The Problem</h3>
+            <p>Many Nigerian tertiary students struggle to find SIWES and internship placements because information is
+                scattered across social media, personal networks and individual company websites often leading to
+                missed
+                opportunities and wasted time.</p>
+        </div>
+
+        <div class="about-block">
+            <h3>Our Solution</h3>
+            <p>StudentHub centralizes SIWES, internship and future opportunity listings in one platform searchable by
+                field of study, location and opportunity type so students spend less time searching and more time
+                preparing.</p>
+        </div>
+
+        <div class="about-block">
+            <h3>Who We're For</h3>
+            <p>Built for Nigerian tertiary students, but also serving the organizations, companies and institutions that
+                want to reach them creating a simple bridge between opportunity and access.</p>
+        </div>
+    </section>
+</body>
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="footer-brand">
+            <h3>StudentHub</h3>
+            <p>Connecting Nigerian students to real SIWES and internship opportunities all in one place.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="#findopportunities">Find Opportunities</a>
+            <a href="saved.html">Saved</a>
+            <a href="postopportunities.html">Post Opportunities</a>
+        </div>
+
+        <div class="footer-links">
+            <h4>Company</h4>
+            <a href="#about">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="termsofservice.html">Terms of Service</a>
+        </div>
+
+        <div class="footer-links">
+            <h4>Connect</h4>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 StudentHub. Built for Nigerian tertiary students.</p>
+    </div>
+</footer>
+
+</html>

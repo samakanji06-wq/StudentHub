@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Post Opportunities</title>
+</head>
+
+<body>
+    <nav>
+        <h3>StudentHub</h3>
+        <div class="navi">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="find-opportunities.html">Find Opportunities</a>
+                <a href="saved.html">Saved</a>
+                <a href="post-opportunity.html">Post Opportunities</a>
+                <a href="#about">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-two">
+                <a href="login.html" class="login">Login</a>
+                <a href="signup.html" class="signup">SignUp</a>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <div class="auth-page">
+        <div class="auth-card wide-card">
+            <span class="auth-tag">For Organizations</span>
+            <h2 class="auth-title">Post an Opportunity</h2>
+            <p class="auth-subtitle">Reach thousands of Nigerian students looking for SIWES & internship placements</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="orgName" class="control-label">Organization Name</label>
+                    <input type="text" class="form-control" id="orgName" placeholder="e.g. TechNova Nigeria">
+                </div>
+
+                <div class="form-group">
+                    <label for="oppTitle" class="control-label">Opportunity Title</label>
+                    <input type="text" class="form-control" id="oppTitle"
+                        placeholder="e.g. Frontend Development Intern">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="location" class="control-label">Location</label>
+                        <select class="form-control" id="location">
+                            <option value="">Select a state</option>
+                            <option value="Abia">Abia</option>
+                            <option value="Adamawa">Adamawa</option>
+                            <option value="Akwa Ibom">Akwa Ibom</option>
+                            <option value="Anambra">Anambra</option>
+                            <option value="Bauchi">Bauchi</option>
+                            <option value="Bayelsa">Bayelsa</option>
+                            <option value="Benue">Benue</option>
+                            <option value="Borno">Borno</option>
+                            <option value="Cross River">Cross River</option>
+                            <option value="Delta">Delta</option>
+                            <option value="Ebonyi">Ebonyi</option>
+                            <option value="Edo">Edo</option>
+                            <option value="Ekiti">Ekiti</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="Gombe">Gombe</option>
+                            <option value="Imo">Imo</option>
+                            <option value="Jigawa">Jigawa</option>
+                            <option value="Kaduna">Kaduna</option>
+                            <option value="Kano">Kano</option>
+                            <option value="Katsina">Katsina</option>
+                            <option value="Kebbi">Kebbi</option>
+                            <option value="Kogi">Kogi</option>
+                            <option value="Kwara">Kwara</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Nasarawa">Nasarawa</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Ogun">Ogun</option>
+                            <option value="Ondo">Ondo</option>
+                            <option value="Osun">Osun</option>
+                            <option value="Oyo">Oyo</option>
+                            <option value="Plateau">Plateau</option>
+                            <option value="Rivers">Rivers</option>
+                            <option value="Sokoto">Sokoto</option>
+                            <option value="Taraba">Taraba</option>
+                            <option value="Yobe">Yobe</option>
+                            <option value="Zamfara">Zamfara</option>
+                            <option value="FCT">Federal Capital Territory (Abuja)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="oppType" class="control-label">Opportunity Type</label>
+                        <select class="form-control" id="oppType">
+                            <option value="">Select type</option>
+                            <option value="SIWES">SIWES</option>
+                            <option value="Internship">Internship</option>
+                            <option value="ESI">ESI</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="description" class="control-label">Description</label>
+                    <textarea class="form-control" id="description" rows="4"
+                        placeholder="Describe the role, responsibilities and what the student will be doing..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="eligibility" class="control-label">Eligibility Requirements</label>
+                    <textarea class="form-control" id="eligibility" rows="3"
+                        placeholder="e.g. 300-level Computer Science students, basic knowledge of HTML/CSS..."></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="duration" class="control-label">Duration</label>
+                        <input type="text" class="form-control" id="duration" placeholder="e.g. 6 months">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deadline" class="control-label">Application Deadline</label>
+                        <input type="date" class="form-control" id="deadline">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="applyInfo" class="control-label">Application Information</label>
+                    <textarea class="form-control" id="applyInfo" rows="2"
+                        placeholder="How should students apply? e.g. Email CV to careers@company.com, or link to application form"></textarea>
+                </div>
+
+                <button type="submit" class="btn-signin">Post Opportunity</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
