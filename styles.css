@@ -145,16 +145,7 @@ body {
     font-family: sans-serif;
 }
 
-.pop-image {
-    position: absolute;
-    right: 4%;
-    bottom: 40px;
-    top: 40px;
-    max-height: 100%;
-    border-radius: 0 0 40% 0;
-    width: 480px;
-    z-index: 2;
-}
+
 
 .filter-section {
     margin: 30px;
